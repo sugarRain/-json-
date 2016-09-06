@@ -1,0 +1,16 @@
+/*
+ * Created on 2013-03-21.
+ * @author: chengtingitng
+ * @desc: 分页样式
+ */
+
+.pagination{color:#555;}
+.pagination a{color:#707070; display:inline-block; margin-left:2px; padding:0 5px; text-decoration:none; border:1px solid #bfbebf; background-color:#fff}
+.pagination .disable{color:#ccc; cursor:default; border-color:#ddd;}
+.pagination .current{color:#fff; cursor:default; border-color:#959595; background-color:#959595;}
+.pagination .last, .pagination .first{display:none;}
+.pagination .previous{margin-right:5px;}
+.pagination .next{margin-left:5px;}
+.pagination .total{padding:0 10px;}
+.pagination .gotoPage{height:18px; margin-left:5px; padding:1px 2px 0; text-align:center; width:40px; border:1px solid #BFBEBF;}
+.pagination .goto{color:#fff; cursor:pointer; line-height:18px; margin-right:5px; padding:3px 5px; *padding-bottom:2px; padding:2px 5px\0; position:relative; top:-2px; *top:-3px; top:0\0; border:1px solid #1951C4; background-color:#0063DC;}

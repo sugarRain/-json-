@@ -1,0 +1,55 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{ font-size:14px; line-height:1.5em; font-family:Arial, Helvetica, sans-serif, "微软雅黑","宋体"; overflow: hidden;}
+/*header*/
+.header{width: 100%;height: 100px;background-color: #f2f2f2;border-bottom: 1px solid #ccc;}
+.header span {width: 300px;text-align: center;float: left;font-size: 30px;padding: 33px;}
+
+.back_page span, 
+.close{cursor:pointer;}
+
+.rule_area .top_bar .btn_elem,
+.g_b{border:1px solid #ccc;}
+.rule_area{ width:1200px; padding:20px; margin:0 auto; border-left:1px solid #ccc; border-right:1px solid #ccc;border-bottom: 1px solid #ccc;}
+.rule_area .top_bar .btn_elem{ display:inline-block; padding:0 5px; height:26px; line-height:26px; border:1px solid #ccc; margin-right:10px; vertical-align:top;}
+
+/*结果页样式*/
+.point{color: #c00;}
+.back_page{}
+.back_page span{font: 15px;font-weight: 800;line-height: 30px;}
+.rule_area .search_input{ height:26px; line-height:26px; width:180px; padding:0 5px;}
+
+.rule_area .search_btn{ width:54px; text-align:center; height:28px; line-height:28px; background:#fff; vertical-align:top;}
+.s_date, .e_date {height:26px; line-height:26px; background:#fff;border:1px solid #ccc; }
+.date_choose span{font-size: 12px;padding-left: 10px;}
+.top_bar{margin-bottom: 10px;}
+.result_top_bar{ height:30px;}
+
+.tbody_viewport{ overflow-y:auto; overflow-x:hidden;}
+
+.tbody_table{table-layout:fixed;}
+.rule_table_con{}
+.thead_table, .thead_table_new,.tbody_table tr,.tbody_table_new tr{padding: 30px 0;border: 1px solid #ccc;}
+.rule_area .tbody_table td{width: 20%;text-align: center;padding: 5px 0; }
+.rule_area .tbody_table a{text-decoration:underline;}
+.rule_area .thead_table th{width: 20%;padding: 5px 0;}
+/*详细对比结果弹出层样式*/
+.rule_table_con_pop{}
+.page_shadow{width: 100%;height: 100%;position: fixed;top:0;left:0;opacity: 0.5;background-color: #000; display: none;}
+.show_shadow{ display:block;}
+
+.popup{background-color: #fff;width:80%; margin:0 auto;position: fixed;left:10%;top:10%; padding:20px;z-index: 10;display: none;}
+.show_popup{ display:block;}
+.popup .tbody_table_new td{width: 16.6%;text-align: center;padding: 5px 0;}
+.popup .thead_table_new th{width: 16.6%;padding: 5px 0 ;}
+.close{width: 10px;height: 10px;font-size: 25px;margin-right: 10px;}
+.tbody_viewport_new{}
+#check_all{margin-left: 10px;}
+/*l历史弹出层样式*/
+.show_history{background-color: #fff;width:80%; margin:0 auto;position: fixed;left:10%;top:10%; padding:20px;z-index: 10;display: none;}
+.exploded_view{width: 100px;height: 500px;border: 1px solid #000;}
+
+/*bottom_bar*/
+.buttom_bar{width: 100%;height: 30px;padding: 10px 10px 0 10px;}
+#list_page,#list_page_pop{width: 350px;height: 100%;float: right;}

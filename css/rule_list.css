@@ -1,0 +1,93 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{ font-size:14px; line-height:1.5em; font-family:Arial, Helvetica, sans-serif, "微软雅黑","宋体"; overflow-y:hidden;}
+input{ outline-style:none;}
+
+/*公共的灰色边框效果*/
+.rule_area .top_bar .btn_elem,
+.g_b{border:1px solid #ccc;}
+
+.page_shadow{ position:fixed; left:0px; top:0px; width:100%; height:100%; background:#000; opacity:0.5; filter:alpha(opacity=50); display:none;}
+
+.rule_area{ width:1100px; margin:0 auto; padding:0 20px; border-left:1px solid #ccc; border-right:1px solid #ccc;}
+
+.rule_area .top_bar{padding-bottom:8px; padding-top:8px;}
+
+/*顶部条按钮公共样式*/
+.rule_area .top_bar .btn_elem{ display:inline-block; padding:0 5px; height:26px; line-height:26px; border:1px solid #ccc; margin-right:10px; vertical-align:top;}
+
+.rule_area .search_bar{}
+.rule_area .search_bar .search_input{ height:26px; line-height:26px; width:180px; padding:0 5px;}
+.rule_area .search_bar .search_btn{ width:54px; text-align:center; height:28px; line-height:28px; background:#fff; vertical-align:top;}
+
+
+.rule_area .fast_bar{padding-left:10px; border-left:1px dotted #ccc;}
+.rule_area .fast_bar .import_btn{}
+
+.rule_area .batching_bar{}
+
+
+.rule_table_con{}
+
+.rule_table{ border-collapse:collapse;}
+.rule_table th,
+.rule_table td{border:1px solid #ccc; padding:3px;}
+.rule_table th{}
+.rule_table .checkbox_col{ width:40px; text-align:center;}
+.rule_table .rulename_col{ width:200px;}
+.rule_table .indexname_col{ width:200px;}
+.rule_table .formula_col{ width:200px;}
+.rule_table .period_col{width:70px; text-align:center;}
+.rule_table .whitelist_col{ width:70px; text-align:center;}
+.rule_table .action_col{ width:50px; text-align:center;}
+.rule_table .remark_col{}
+
+
+.thead_table{}
+
+.tbody_viewport{overflow-x:hidden; overflow-y:auto; padding-bottom:5px;}
+.tbody_table{ margin-top:-1px;}
+.tbody_table .no_rule_tip{padding:10px; text-align:center; font-size:16px; line-height:30px;}
+
+.rule_area .foot_bar{padding:4px; height:24px; line-height:22px; border-top:1px dashed #ccc;}
+
+/*添加规则弹层相关样式*/
+.add_rule_pop{ position:fixed; width:400px; left:50%; margin-left:-200px; top:50%; margin-top:-100px; background:#fff; padding:20px 10px 10px; display:none;}
+.add_rule_pop .close_btn{ position:absolute; right:5px; top:0px; cursor:pointer; font-size:20px;}
+.add_rule_table{}
+.add_rule_table td{ padding:5px 3px;}
+.add_rule_table .name_col{ width:130px; text-align:right;}
+.add_rule_table .input_col{}
+.add_rule_table .input_text{ width:250px; height:20px; line-height:20px;}
+.add_rule_table .rule_index_text{}
+.add_rule_table .rule_formula_text{}
+.add_rule_table .rule_period_text{}
+.add_rule_table .action_td{ text-align:center;}
+.add_rule_table .action_btn{ display:inline-block; width:60px; height:26px; line-height:26px; text-align:center; border:1px solid #ccc; margin-left:10px;}
+
+
+/*白名单弹层相关样式*/
+.white_list_pop{position:fixed; width:620px; left:50%; margin-left:-310px; top:50%; margin-top:-150px; background:#fff; padding:10px 0px; display:none;}
+.white_list_pop .close_btn{position:absolute; right:5px; top:0px; cursor:pointer; font-size:20px;}
+.white_list_pop .top_bar{padding-left:24px; padding-bottom:6px; border-bottom:1px solid #ccc;}
+.white_list_pop .pop_name{ height:26px; line-height:26px; padding-right:20px; font-size:18px; float:left;}
+.white_list_pop .add_stock_bar{ float:left;}
+.white_list_pop .add_stock_text{ display:inline-block; height:20px; line-height:20px; width:300px;}
+.white_list_pop .top_bar .action_btn{display:inline-block; margin-left:3px; width:55px; text-align:center; height:24px; line-height:24px;}
+.white_list_pop .top_bar .add_stock_btn{}
+.white_list_pop .top_bar .batching_del_stock_btn{ margin-left:20px;}
+
+.white_list_pop .stocks_table{}
+.white_list_pop .stocks_table th,
+.white_list_pop .stocks_table td{ text-align:center; padding:3px; border-bottom:1px solid #ccc;}
+.white_list_pop .stocks_table th{}
+.white_list_pop .stocks_table td{}
+.white_list_pop .stocks_table .checkbox_col{ width:40px;}
+.white_list_pop .stocks_table .code_col{}
+.white_list_pop .stocks_table .action_col{}
+no_stock_tip{}
+.white_list_pop .stocks_table .del_stock_btn{ display:inline-block; padding:0 5px; line-height:20px; height:20px; cursor:pointer; border:1px solid #ccc; background:#eee;}
+.white_list_pop .foot_bar{ padding-top:8px;}
+
+.page_bar{}

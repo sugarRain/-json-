@@ -1,0 +1,114 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>规则列表</title>
+<link type="text/css" rel="stylesheet" href="css/default.css">
+<link type="text/css" rel="stylesheet" href="css/plugin/pagination.css">
+<link type="text/css" rel="stylesheet" href="css/rule_list.css">
+<script src="js/jquery-1.8.0.min.js"></script>
+</head>
+
+<body>
+<div class="page_shadow" id="page_shadow"></div>
+<div class="rule_area">
+	<div class="top_bar clearfix" id="top_bar">
+		<div class="search_bar fl"><input class="search_input g_b" type="text" placeholder="规则名称/规则指标名称"><input class="search_btn g_b ml10" type="button" value="搜索"></div>
+		
+		<div class="fast_bar fr"><span class="import_btn btn_elem">导数据</span><span class="add_rules_btn btn_elem">添加规则</span><span class="btn_elem start_test_btn">开始测试</span><span class="btn_elem test_result_btn">测试结果</span><span class="btn_elem log_btn">操作日志</span><span class="btn_elem statistics_btn">统计结果</span></div>
+		
+		<div class="batching_bar fr"><span class="btn_elem batching_del_btn">批量删除</span></div>
+	</div>
+	<div class="rule_table_con">
+		<table class="thead_table rule_table" id="thead_table" width="100%" border="0" cellspacing="0" cellpadding="0">
+			<tr>
+				<th class="checkbox_col"><input type="checkbox" class="checkbox_item check_all"></th>
+				<th class="rulename_col">规则名称</th>
+				<th class="indexname_col">规则指标名称</th>
+				<th class="formula_col ">规则计算公式</th>
+				<th class="period_col">执行频率</th>
+				<th class="whitelist_col">白名单</th>
+				<th class="action_col">操作</th>
+				<th class="remark_col">备注</th>
+			</tr>
+		</table>
+		<div id="tbody_viewport" class="tbody_viewport">
+			<table class="tbody_table rule_table" width="100%" border="0" cellspacing="0" cellpadding="0">
+				<!--<tr><td class="no_rule_tip">暂无规则数据！</td></tr>
+				<tr>
+					<td class="checkbox_col"><input type="checkbox" class="checkbox_item check_rule"></td>
+					<td class="rulename_col">规则名称1</td>
+					<td class="indexname_col">指标名称1</td>
+					<td class="formula_col ">规则公式1</td>
+					<td class="period_col">日</td>
+					<td class="whitelist_col"><span class="white_list_detail_btn">查看</span></td>
+					<td class="action_col"><span class="action_btn del_rule_item_btn">删除</span></td>
+					<td class="remark_col">备注1</td>
+				</tr>-->
+				
+			</table>
+		</div>
+	</div>
+	<div class="foot_bar clearfix" id="foot_bar">
+		<div class="page_bar fr"></div>
+	</div>
+</div>
+<div class="add_rule_pop" id="add_rule_pop">
+	<table width="100%" border="0" cellspacing="0" cellpadding="0" class="add_rule_table">
+		<tr>
+			<td class="name_col">规则指标名称：</td>
+			<td class="input_col"><input type="text" class="input_text rule_index_text" placeholder=""></td>
+		</tr>
+		<tr>
+			<td class="name_col">规则计算公式：</td>
+			<td class="input_col"><input type="text" class="input_text rule_formula_text" placeholder=""></td>
+		</tr>
+		<tr>
+			<td class="name_col">执行周期（频率）：</td>
+			<td class="input_col"><input type="text" class="input_text rule_period_text" placeholder=""></td>
+		</tr>
+		<tr>
+			<td colspan="2" class="action_td"><input type="button" value="添加" class="action_btn sure_btn"><input type="button" value="取消" class="action_btn cancel_btn"></td>
+		</tr>
+	</table>
+	<div class="close_btn" title="关闭">X</div>
+</div>
+
+<div class="white_list_pop" id="white_list_pop">
+	<div class="close_btn" title="关闭">x</div>
+	<div class="top_bar clearfix">
+		<div class="pop_name">白名单</div>
+		<div class="add_stock_bar">
+			<input type="text" class="add_stock_text">
+			<input type="button" value="新增" class="action_btn add_stock_btn">
+			<input type="button" value="批量删除" class="action_btn batching_del_stock_btn">
+		</div>
+	</div>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0" class="stocks_table">
+		<thead>
+			<tr>
+				<th class="checkbox_col"><input type="checkbox" class="checkall_stock"></th>
+				<th class="code_col">股票代码</th>
+				<th class="action_col">操作</th>
+			</tr>
+		</thead>
+		<tbody class="white_list_tbody">
+			<tr>
+				<td class="checkbox_col"><input type="checkbox" class="check_stock"></td>
+				<td class="code_col">300033</td>
+				<td class="action_col"><span class="del_stock_btn">删除</span></td>
+			</tr>
+		</tbody>
+	</table>
+	<div class="foot_bar">
+		<div class="page_bar"></div>
+	</div>
+</div>
+<script>
+var interfaceCfg = "http://192.168.23.17:8080/monitor/";
+</script>
+<script src="js/src/init.js"></script>
+<script src="js/src/plugin/pagination.js"></script>
+<script src="js/src/pages/ruleList.js"></script>
+</body>
+</html>

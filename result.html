@@ -1,0 +1,74 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>结果列表</title>
+<link type="text/css" rel="stylesheet" href="css/default.css">
+<link type="text/css" rel="stylesheet" href="css/result.css">
+<link type="text/css" rel="stylesheet" href="css/plugin/pagination.css">
+<script src="js/jquery-1.8.0.min.js"></script>
+</head>
+
+<body>
+<div class="header"><span>指标计算数据监测</span></div>	
+<div class="rule_area ">
+	<div class="top_bar result_top_bar clearfix" id="top_bar">
+		<div class="search_bar search_hidden fl" id="result_search_bar"><input class="search_input se_input g_b" type="text" placeholder="规则名称/规则指标名称"><span>起止时间：</span><input class="s_date de_s" type="date" value="">~<input class="e_date de_e"type="date"value=""> <input class="search_btn se_btn g_b ml10" type="button" value="搜索"></div>
+		
+		<div class="back_page fr" id="back_page"></div>
+	</div>
+	<div class="rule_table_con">
+		<table class="thead_table rule_table" width="100%" border="0" cellspacing="0" cellpadding="0" id="result_thead_table">
+			<tr>
+				<th>测试时间</th>
+				<th>规则名称</th>
+				<th>对比结果不一致数量</th>
+				<th>备注</th>
+				<th>历史统计情况</th>
+			</tr>
+		</table>
+		<div id="tbody_viewport" class="tbody_viewport">
+			<table class="tbody_table rule_table" width="100%" border="0" cellspacing="0" cellpadding="0">
+				<tr class = "point"><td rowspan="5">暂无数据信息，请查询搜索！</td></tr>
+			</table>
+		</div>
+	</div>
+	<div class="buttom_bar" id="result_bottom_bar">
+		<div id="list_page"></div>
+	</div>
+</div>
+<div class="page_shadow">
+</div>
+<div class="popup">
+	<div class="top_bar clearfix" id="top_bar">
+		<div class="close fr">×</div>
+	</div>
+	<div class="rule_table_con_pop">
+		<table class="thead_table_new rule_table" width="100%" border="0" cellspacing="0" cellpadding="0">
+			<tr>
+				<th>测试时间</th>
+				<th>规则名称</th>
+				<th>股票代码</th>
+				<th>规则名称本身值</th>
+				<th>规则公式值</th>
+				<th>是否加入白名单<input id = "check_all" class ="mr10" type="checkbox"><button id = "white_add">添加</button></th>
+			</tr>
+		</table>
+		<div id="tbody_viewport_new" class="tbody_viewport_new">
+			<table class="tbody_table_new  rule_table" width="100%" border="0" cellspacing="0" cellpadding="0">
+			</table>
+		</div>
+	</div>
+	<div class="buttom_bar fr">
+		<div id="list_page_pop"></div>
+	</div>
+</div>
+<script>
+var interfaceCfg = "http://192.168.23.17:8080/monitor/";
+</script>
+<script src="js/src/init.js"></script>
+<script src="js/src/common/util.js"></script>
+<script src="js/src/plugin/pagination.js"></script>
+<script src="js/src/pages/result.js"></script>
+</body>
+</html>
